@@ -12,21 +12,28 @@
     }
     .box-style {
       border-radius: 5px;
-      border: 1px solid rgba(0,0,0,.1);
+      border: 1px solid rgba(0,0,0,.05);
       background: rgb(250,249,251);
+      padding: 1em 2em;
     }
-    .box-layout {
+    .box-wrapper {
       margin: 100px auto;
       max-width: 600px;
       position: relative;
-      padding: 1em 2em;
+    }
+    .info-style {
+      font-size: 12px;
+      text-align: right;
+      color: rgb(60,60,60);
+      padding-right: 2px;
     }
   </style>
   <body>
 
-    <div id="info"></div>
-    <div id="output" class="box-style box-layout"></div>
-
+    <div class="box-wrapper">
+      <div id="info" class="info-style"></div>
+      <div id="output" class="box-style"></div>
+    </div>
 
     <script type="text/javascript">
 
@@ -36,7 +43,7 @@
       base64_string = base64_string.replace("'", "");
       base64_string = base64_string.replace(/ /g, "+");
       document.getElementById('output').innerHTML = b64DecodeUnicode( base64_string );
-      document.getElementById('info').innerHTML = 'Tecken: ' + base64_string.length;
+      document.getElementById('info').innerHTML = base64_string.length.toLocaleString('sv') + ' tecken';
 
       function b64DecodeUnicode(str) {
           // Going backwards: from bytestream, to percent-encoding, to original string.
