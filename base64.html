@@ -24,7 +24,9 @@
   </style>
   <body>
 
+    <div id="info"></div>
     <div id="output" class="box-style box-layout"></div>
+
 
     <script type="text/javascript">
 
@@ -33,7 +35,8 @@
       base64_string = base64_string.replace("b'", "");
       base64_string = base64_string.replace("'", "");
       base64_string = base64_string.replace(/ /g, "+");
-      document.getElementById('output').innerHTML = b64DecodeUnicode( base64_string ) //
+      document.getElementById('output').innerHTML = b64DecodeUnicode( base64_string );
+      document.getElementById('info').innerHTML = 'Tecken: ' + base64_string.length;
 
       function b64DecodeUnicode(str) {
           // Going backwards: from bytestream, to percent-encoding, to original string.
