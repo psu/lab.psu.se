@@ -17,6 +17,8 @@
 <ul>
   <li><a href="http://www.psu.se/post/136954179915/how-to-convert-a-playlist-to-spotify">spotify</a></li>
   <li><a href="/ticket-reminder">ticket-reminder</a></li>
+  <li><a href="/base64.html">base64.html</a></li>
+  <li><a href="/kursplan-url-webpage.html">kursplan-url-webpage.html</a></li>
 </ul>
 
 </body>
