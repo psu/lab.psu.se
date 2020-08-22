@@ -19,6 +19,7 @@
   <li><a href="/ticket-reminder">ticket-reminder</a></li>
   <li><a href="/base64.html">base64.html</a></li>
   <li><a href="/kursplan-url-webpage.html">kursplan-url-webpage.html</a></li>
+  <li><a href="/sitemap/csv.php">sitemap/csv.php</a></li>
 </ul>
  
 </body>
